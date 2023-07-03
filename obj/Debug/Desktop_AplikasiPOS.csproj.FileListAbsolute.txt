@@ -1,0 +1,15 @@
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\bin\Debug\Desktop_AplikasiPOS.exe.config
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\bin\Debug\Desktop_AplikasiPOS.exe
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\bin\Debug\Desktop_AplikasiPOS.pdb
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.csproj.AssemblyReference.cache
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.login.resources
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.Properties.Resources.resources
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.csproj.GenerateResource.cache
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.csproj.CoreCompileInputs.cache
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.csproj.CopyComplete
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.exe
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.pdb
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.Main_Dashboard.resources
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.Manajemen_Produk.resources
