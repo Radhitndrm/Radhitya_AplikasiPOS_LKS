@@ -67,6 +67,7 @@ namespace Desktop_AplikasiPOS
 
 
 
+
                 foreach (var s in products)
                 {
                     // Menambahkan row data
@@ -84,7 +85,7 @@ namespace Desktop_AplikasiPOS
                 string.IsNullOrWhiteSpace(product["stocks"]) ||
                 string.IsNullOrWhiteSpace(product["category"]))
             {
-                MessageBox.Show("Harap isi semua field.");
+                MessageBox.Show("Please fill in all fields..");
                 return;
             }
 
@@ -113,6 +114,11 @@ namespace Desktop_AplikasiPOS
                 {"category",comboBox1.Text }
             };
             addProduct(product);
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            comboBox1.ResetText();
+            textBox6.Clear();
         }
 
         private async void updateProduct(Dictionary<String,String> product)
@@ -122,7 +128,7 @@ namespace Desktop_AplikasiPOS
                string.IsNullOrWhiteSpace(product["stocks"]) ||
                string.IsNullOrWhiteSpace(product["category"]))
             {
-                MessageBox.Show("Harap isi semua field.");
+                MessageBox.Show("Please fill in all fields..");
                 return;
             }
 
@@ -154,6 +160,11 @@ namespace Desktop_AplikasiPOS
                 {"category",comboBox1.Text }
             };
             updateProduct(product);
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            comboBox1.ResetText();
+            textBox6.Clear();
         }
 
         private async void deleteProduct(Dictionary<String, String> product)
@@ -184,6 +195,11 @@ namespace Desktop_AplikasiPOS
                 {"id",textBox1.Text }
             };
             deleteProduct(product);
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            comboBox1.ResetText();
+            textBox6.Clear();
         }
 
         private void getCategory()
@@ -208,7 +224,11 @@ namespace Desktop_AplikasiPOS
                 dataGridView2.Columns.Add("Id", "Id");
                 dataGridView2.Columns.Add("Category", "Category");
 
-
+                    
+                foreach (var category in categories)
+                {
+                    comboBox1.Items.Add(category.category);
+                }
 
                 foreach (var s in categories)
                 {
@@ -226,7 +246,7 @@ namespace Desktop_AplikasiPOS
         {
             if (string.IsNullOrWhiteSpace(category["category"]))
             {
-                MessageBox.Show("Harap isi semua field.");
+                MessageBox.Show("Please fill in all fields..");
                 return;
             }
             var values = category;
@@ -250,13 +270,18 @@ namespace Desktop_AplikasiPOS
                 {"category",textBox6.Text }
             };
             addCategory(category);
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            comboBox1.ResetText();
+            textBox6.Clear();
         }
 
         private async void updateCategory(Dictionary<String, String> category)
         {
             if (string.IsNullOrWhiteSpace(category["category"]))
             {
-                MessageBox.Show("Harap isi semua field.");
+                MessageBox.Show("Please fill in all fields..");
                 return;
             }
             var values = category;
@@ -283,6 +308,11 @@ namespace Desktop_AplikasiPOS
                 {"category",textBox6.Text }
             };
             updateCategory(category);
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            comboBox1.ResetText();
+            textBox6.Clear();
         }
 
         private void button_dirrect_main_Click(object sender, EventArgs e)
@@ -326,6 +356,11 @@ namespace Desktop_AplikasiPOS
             }
         }
 
-       
+        private void button_product_kembali_Click(object sender, EventArgs e)
+        {
+            Main_Dashboard main = new Main_Dashboard();
+            main.Show();
+            this.Hide();
+        }
     }
 }

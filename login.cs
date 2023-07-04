@@ -32,11 +32,11 @@ namespace Desktop_AplikasiPOS
             if (string.IsNullOrWhiteSpace(login["user"]) ||
               string.IsNullOrWhiteSpace(login["password"]))
             {
-                MessageBox.Show("Harap isi semua field.");
+                MessageBox.Show("Please fill in all fields.");
                 return;
             }
             var values = login;
-            var content = new FormUrlEncodedContent(login);
+            var content = new FormUrlEncodedContent(values);
 
             HttpResponseMessage response = await httpClient.PostAsync("users/login.php", content);
 
@@ -47,7 +47,7 @@ namespace Desktop_AplikasiPOS
                 Account.token = resultBody["token"];
                 Account.user = resultBody["username"];
 
-                MessageBox.Show("Login berhasil");
+                MessageBox.Show("Login Success!");
 
                 Main_Dashboard main = new Main_Dashboard();
                 main.Show();
@@ -55,7 +55,7 @@ namespace Desktop_AplikasiPOS
             }
             else
             {
-                MessageBox.Show("Login Gagal");
+                MessageBox.Show("Login Failed");
             }
         }
         private void button_login_Click(object sender, EventArgs e)

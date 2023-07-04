@@ -35,6 +35,8 @@ namespace Desktop_AplikasiPOS
             this.password = new System.Windows.Forms.TextBox();
             this.button_login = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -82,10 +84,22 @@ namespace Desktop_AplikasiPOS
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(-3, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(804, 71);
             this.panel1.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(15, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(153, 32);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Coffee Shop";
             // 
             // login
             // 
@@ -101,6 +115,8 @@ namespace Desktop_AplikasiPOS
             this.Name = "login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.login_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,6 +130,7 @@ namespace Desktop_AplikasiPOS
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button button_login;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

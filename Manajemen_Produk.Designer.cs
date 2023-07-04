@@ -30,6 +30,7 @@ namespace Desktop_AplikasiPOS
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_dirrect_main = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,7 +50,7 @@ namespace Desktop_AplikasiPOS
             this.label5 = new System.Windows.Forms.Label();
             this.button_insert = new System.Windows.Forms.Button();
             this.button_Ucategory = new System.Windows.Forms.Button();
-            this.button_dirrect_main = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -58,11 +59,22 @@ namespace Desktop_AplikasiPOS
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.button_dirrect_main);
             this.panel1.Location = new System.Drawing.Point(-2, -2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1234, 79);
             this.panel1.TabIndex = 0;
+            // 
+            // button_dirrect_main
+            // 
+            this.button_dirrect_main.Location = new System.Drawing.Point(1076, 14);
+            this.button_dirrect_main.Name = "button_dirrect_main";
+            this.button_dirrect_main.Size = new System.Drawing.Size(101, 43);
+            this.button_dirrect_main.TabIndex = 0;
+            this.button_dirrect_main.Text = "Main Page";
+            this.button_dirrect_main.UseVisualStyleBackColor = true;
+            this.button_dirrect_main.Click += new System.EventHandler(this.button_dirrect_main_Click);
             // 
             // dataGridView1
             // 
@@ -143,9 +155,6 @@ namespace Desktop_AplikasiPOS
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Coffee",
-            "Dessert"});
             this.comboBox1.Location = new System.Drawing.Point(132, 274);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
@@ -237,15 +246,16 @@ namespace Desktop_AplikasiPOS
             this.button_Ucategory.UseVisualStyleBackColor = true;
             this.button_Ucategory.Click += new System.EventHandler(this.button_Ucategory_Click);
             // 
-            // button_dirrect_main
+            // label6
             // 
-            this.button_dirrect_main.Location = new System.Drawing.Point(1076, 14);
-            this.button_dirrect_main.Name = "button_dirrect_main";
-            this.button_dirrect_main.Size = new System.Drawing.Size(101, 43);
-            this.button_dirrect_main.TabIndex = 0;
-            this.button_dirrect_main.Text = "Main Page";
-            this.button_dirrect_main.UseVisualStyleBackColor = true;
-            this.button_dirrect_main.Click += new System.EventHandler(this.button_dirrect_main_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(60, 25);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(153, 32);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Coffee Shop";
             // 
             // Manajemen_Produk
             // 
@@ -276,6 +286,7 @@ namespace Desktop_AplikasiPOS
             this.Text = "Manajemen_Produk";
             this.Load += new System.EventHandler(this.Manajemen_Produk_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
@@ -306,5 +317,6 @@ namespace Desktop_AplikasiPOS
         private System.Windows.Forms.Button button_insert;
         private System.Windows.Forms.Button button_Ucategory;
         private System.Windows.Forms.Button button_dirrect_main;
+        private System.Windows.Forms.Label label6;
     }
 }

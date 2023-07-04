@@ -13,3 +13,6 @@ C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.ex
 C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.pdb
 C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.Main_Dashboard.resources
 C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.Manajemen_Produk.resources
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.cart.resources
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.Payment.resources
+C:\Users\scxut\source\repos\Desktop_AplikasiPOS\obj\Debug\Desktop_AplikasiPOS.report.resources

@@ -16,7 +16,7 @@ namespace Desktop_AplikasiPOS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Manajemen_Produk());
+            Application.Run(new login());
         }
     }
 }
